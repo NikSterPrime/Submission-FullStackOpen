@@ -48,12 +48,12 @@ const App = () => {
       }
     ]
   }
-  console.log(parts[0].name)
+  console.log(course.name)
   return (
     <div>
-      <Header course={course[0].name} />
-      <Content parts={parts} />
-      <Total parts={parts} />
+      <Header course={course.name} />
+      <Content parts={course.parts}/>
+      <Total parts={course.parts} />
     </div>
   )
 }
