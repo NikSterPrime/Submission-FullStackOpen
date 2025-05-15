@@ -4,12 +4,6 @@ const Content = (props) => props.parts.map((p) => {
     return <p>{p.name} {p.exercises}</p>;
 })
 
-const Part = (props) => (
-  <p>
-    {props.part.name} {props.part.exercises}
-  </p>
-)
-
 const Total = (props) => props.parts.reduce((s,p) => {
     console.log(p.exercises);
     return  s + p.exercises;
